@@ -1,8 +1,7 @@
 {
-	"name":"On the Shore, Beauty Injection customized",
+	"name":"Beauty Injection",
 	"thumbnail":"on-the-shore.png",
 	"screenshot":"on-the-shore.png",
-    "tags": { "en": ["clean"] },
     "pageTypes":["home"],
     "templateType":"standard",
     "images":["/images/feature-bg.jpg"],
