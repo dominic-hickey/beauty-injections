@@ -1,0 +1,243 @@
+// -----------------------------
+// Menu Sections navigation
+// -----------------------------
+
+.widget.menusections {
+    text-align: center;
+    padding: 0;
+    @media @tablet {
+        margin-top: 1.5em;
+    }
+    @media only screen and (max-width: 550px) {
+        padding:0;
+        margin-top:0;
+        padding: 0 0 0;
+    }
+    ul {
+        display: table;
+        width: 100%;
+        margin: 0 auto;
+        list-style: none;
+        padding: 0;
+        li {
+            display: inline-block;
+            padding: 0 30px 10px 0;
+            margin: 0;
+            &:last-child {
+                padding-right: 0;
+                @media only screen and (max-width: 550px) {
+                    border-bottom: 1px solid darken(@color-swatch1,7%);
+                }
+                a:after {
+                    content: none;
+                    padding-left: 0;
+                }
+            }
+            a {
+                color: @font-swatch3-color;
+                font-family: @font-swatch3-font-family;
+                font-size: @font-swatch3-font-size;
+                line-height: @font-swatch3-line-height;
+                &:hover {
+                    color: @font-swatch2-color;
+                }
+            }
+            @media only screen and (max-width: 550px) {
+                width: 100%;
+                border-bottom: 1px solid darken(@color-swatch1,7%);
+                padding: 15px 0 10px 0;
+                a:after {
+                    content: '';
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+// -----------------------------
+// Menu
+// -----------------------------
+
+.widget {
+    &.menu {
+        .clearfix;
+        text-align: center;
+        .main {
+            width: 100%;
+            margin: 0 auto;
+            border: none;
+            .menu-header {
+                text-align: center;
+                padding: 2em 0;
+                h1.menu-name {
+                    display: inline-block;
+                    background: @color-swatch3;
+                    padding: 10px 30px 13px;
+                    color: @color-swatch2;
+                    position: relative;
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        top: 100%;
+                        left: 44%;
+                        border-top: 10px solid @color-swatch3;
+                        border-top-color: @color-swatch3;
+                        border-left: 10px solid transparent;
+                        border-right: 10px solid transparent;  
+                    }
+                }
+                .menu-description {
+                    padding: 2em 0;
+                }
+            }
+            h2 {
+                color: @font-swatch3-color;
+            }
+            p.menu-subsection-description {
+                color: @font-swatch3-color;
+            }
+            .menu-items .menu-item.menu-item-promoted .inner-item {
+                h3, .menu-item-price p {
+                    color: @font-swatch3-color;
+                }
+                h3:before { 
+                    content: "\2605";
+                    margin: 0 auto 15px;
+                    display: inline-block;
+                    height: 22px;
+                    width: 100%;
+                    color: @font-swatch3-color;
+                }
+            }
+            .menu-items .menu-item {
+                display: inline-block;
+                width: 100%;
+                .inner-item {
+                    h3 {
+                        padding: 15px 15px 10px;
+                        background-color: darken(@color-swatch1,5%);
+                        color: @font-swatch5-color;
+                    }
+                    .menu-item-image-wrap {
+                        background-repeat: no-repeat;
+                        background-color: darken(@color-swatch1,5%);
+                        border-left: 10px solid darken(@color-swatch1,5%);
+                        border-right: 10px solid darken(@color-swatch1,5%);
+                        border-bottom: 10px solid darken(@color-swatch1,5%);
+                        background-position: center;
+                        background-size: cover;
+                        padding: 0 1em 1.5em;
+                        height: 250px;
+                        width: 100%;
+                        img {
+                            display: none;
+                        }
+                    }/* end menu-item-image-wrap */
+                    .menu-item-price {
+                        background-color: darken(@color-swatch1,5%);
+                        color: darken(@color-swatch5,15%);
+                        p {
+                            margin: 0;
+                            display: inline-block;
+                            padding: 0px 10px 15px;
+                            font-family:@font-swatch3-font-family;
+                            font-size:@font-swatch3-font-size;
+                            font-weight: @font-swatch3-font-weight;
+                            line-height:@font-swatch3-line-height;
+                            color: @font-swatch5-color;
+                            letter-spacing: @font-swatch3-letter-spacing;
+                        }
+                    }
+                    p.menu-item-description {
+                        padding: 12px 0 0;
+                    }
+                    .menu-item-nutritional-title, .menu-item-nutritional-prop, .menu-section-item-dietary-props {
+                        color: @color-swatch5;
+                    }
+                    .menu-item-nutritional-title {
+                        padding-top: 10px;
+                        padding-bottom: 0;
+                        &:after {
+                            content:':';
+                        }
+                    }
+                    .menu-section-item-dietary-props {
+                        float: left;
+                        width: 100%;
+                        margin-top: 0px;
+                        padding: 0 15px 10px 15px;
+                       .dietary-icon {
+                            margin-right: 0px;
+                            margin-left: 8px;
+                            margin-bottom: 5px;
+                            margin-top: 0;
+                            padding: 0 3px;
+                            &:before { 
+                                content: "\2217";
+                                font-size: 21px;
+                                z-index: 0;
+                                color: @font-swatch3-color;
+                            }
+                        }
+                        .not-spicy-icon {
+                            display: none;
+                        }
+                    } /* end menu-section-item-dietary-props */
+                } /* end inner-item */
+            }/* end menu-items */
+            .menu-subsection {
+                padding: 0;
+                margin: 0;
+                .menu-subsection-promoted { /* PROMOTED SUB-SECTION */ 
+                    padding: 0 3em 2em;
+                    margin: 2em 0 1em;
+                    position: relative;
+                    background-color: darken(@color-swatch1,5%);
+                    @media @mobile {
+                        padding: 0 2em 0;
+                    }
+                    .menu-subsection-header {
+                        border-top: none;
+                        margin: 0;
+                        padding: 2em 0 0.5em;
+                        @media @mobile {
+                            padding: 0;
+                        }
+                        h2:before { 
+                            content: "\2605";
+                            margin: 0 auto;
+                            display: inline-block;
+                            height: 22px;
+                            width: 100%;
+                        }
+                    }
+                    .menu-item .inner-item h3 {
+                        padding: 0;
+                    }
+                    .menu-item .inner-item .menu-item-price p {
+                        padding: 0;
+                    }
+                    .menu-item .inner-item p.menu-item-description {
+                        padding: 0;
+                    }
+                    
+                } /* end PROMOTED SUB-SECTION */
+            }/* end menu-subsection */
+        }
+    }
+}
+
+@media @mobile {
+    .widget.menu {
+        .main {
+            display: none;
+            &.selected {
+                display: block;
+            }
+        }
+    }
+}

@@ -1,0 +1,145 @@
+{
+	"name":"On the Shore, Beauty Injection customized",
+	"thumbnail":"on-the-shore.png",
+	"screenshot":"on-the-shore.png",
+    "tags": { "en": ["clean"] },
+    "pageTypes":["home"],
+    "templateType":"standard",
+    "images":["/images/feature-bg.jpg"],
+    "colorSwatches":
+    {
+        "Swatch 1": {
+            "color1":"#ffffff",
+            "color2":"#fbef94",
+            "color3":"#254b61",
+            "color4":"#4292C7",
+            "color5":"#7e8892",
+            "color6":"#ffffff",
+            "color7":"#254b61"
+        },
+        "Swatch 2": {
+            "color1":"#ffffff",
+            "color2":"#fdc607",
+            "color3":"#56acb0",
+            "color4":"#588587",
+            "color5":"#8e9292",
+            "color6":"#ffffff",
+            "color7":"#3c3d3e"
+        },
+        "Swatch 3": {
+            "color1":"#ffffff",
+            "color2":"#FDF19A",
+            "color3":"#15776B",
+            "color4":"#15776B",
+            "color5":"#888888",
+            "color6":"#ffffff",
+            "color7":"#97928A"
+        },
+        "Swatch 4": {
+            "color1":"#FAFAFA",
+            "color2":"#FDE2BB",
+            "color3":"#C59957",
+            "color4":"#725375",
+            "color5":"#8A8A8A",
+            "color6":"#ffffff",
+            "color7":"#282E33"
+        },
+        "Swatch 5": {
+            "color1":"#FCFCFC",
+            "color2":"#c3d7e3",
+            "color3":"#CEB237",
+            "color4":"#758590",
+            "color5":"#7e8892",
+            "color6":"#ffffff",
+            "color7":"#758590"
+        }
+    },
+    "fontSwatch": {
+       "title": "Futura / Merriweather",
+        "font1": {
+            "font-family": "\"Futura\", Helvetica, sans-serif",
+            "font-size": "24px",
+            "font-weight": "400",
+            "line-height": "34px",
+            "color": "darken(@color-swatch4,5%)",
+            "letter-spacing": "inherit"
+        },
+        "font2": {
+            "font-family": "\"Futura\", Helvetica, sans-serif",
+            "font-size": "26px",
+            "font-weight": "400",
+            "line-height": "36px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font3": {
+            "font-family": "\"Futura\", Helvetica, sans-serif",
+            "font-size": "20px",
+            "font-weight": "400",
+            "line-height": "30px",
+            "color": "darken(@color-swatch4,10%)",
+            "letter-spacing": "inherit"
+        },
+        "font4": {
+            "font-family": "\"Merriweather\", Georgia, serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "26px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font5": {
+            "font-family": "\"Merriweather\", Georgia, serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "26px",
+            "color": "@color-swatch5",
+            "letter-spacing": "inherit"
+        },
+        "font6": {
+            "font-family": "\"Futura\", Helvetica, sans-serif",
+            "font-size": "15px",
+            "font-weight": "400",
+            "line-height": "25px",
+            "color": "@color-swatch6",
+            "letter-spacing": "inherit",
+            "color-hover": "@color-swatch2",
+            "background-color": "@color-swatch7",
+            "background-color-hover": "@color-swatch7"
+         },
+        "font7": {
+            "font-family": "\"Futura\", Helvetica, sans-serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "24px",
+            "color": "@color-swatch1",
+            "letter-spacing": "inherit",
+            "background-color": "@color-swatch3",
+            "background-color-hover": "lighten(@color-swatch3,10%)"
+        },
+        "font8": {
+            "font-family": "\"Merriweather\", Georgia, serif",
+            "font-size": "18px",
+            "font-weight": "400",
+            "line-height": "30px",
+            "color": "@color-swatch1",
+            "letter-spacing": "inherit"
+        },
+        "font9": {
+            "font-family": "\"Merriweather\", Georgia, serif",
+            "font-size": "18px",
+            "font-weight": "inherit",
+            "line-height": "30px",
+            "color": "@color-swatch2",
+            "letter-spacing": "inherit"
+        },
+        "font10": {
+            "font-family": "\"Futura\", Helvetica, sans-serif",
+            "font-size": "27px",
+            "font-weight": "400",
+            "line-height": "37px",
+            "color": "@color-swatch1",
+            "letter-spacing": "inherit"
+        }
+    }
+}

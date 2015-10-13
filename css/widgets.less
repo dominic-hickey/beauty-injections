@@ -1,0 +1,566 @@
+
+// -----------------------------
+// Blockquote
+// -----------------------------
+
+blockquote {
+    background-color: transparent;
+    margin: 20px;
+    &:before {
+        color: @color-swatch4;
+    }
+}
+
+
+
+
+// -----------------------------
+// Buttons
+// -----------------------------
+
+.widget.button button,
+button.btn, 
+.btn,
+.widget.profile form button, 
+.signupform fieldset button, 
+.contactform button.btn, 
+.blogsearch form button, 
+.checkout-order-button, 
+.checkout-empty-link,
+.widget.tweet a,
+.widget.paypalbuynow .widget.button.paypal,
+.widget.dropbox button,
+.blog-post-more-link a,
+.blog-list-footer a,
+.form-group.productlist-search .btn,
+.widget.ecombasket .ecombasket-pull,
+a.btn.ecombasket-summary-link,
+a.basket-summary-empty-cta.btn,
+.btn.basket-summary-submit {
+    font-family: @font-swatch7-font-family;
+    color: @font-swatch7-color;
+    font-size: @font-swatch7-font-size;
+    font-weight: @font-swatch7-font-weight;
+    line-height: @font-swatch7-line-height;
+    background-color: @font-swatch7-background-color;
+    .border-radius(3px);
+    border: none;
+    margin: 5px 0;
+    padding: 8px 14px;
+    text-decoration: none;
+    @media @mobile {
+        margin: 10px 0;
+    }
+    &:hover {
+        background-color: @font-swatch7-background-color-hover;
+        .transition( all, 0.5s, ease );
+    }
+} 
+
+    // Click to call
+
+        .widget.clicktocall {
+            @media @mobile {
+                a, a:hover {
+                    font-family: @font-swatch7-font-family;
+                    color: @font-swatch7-color;
+                    font-size: @font-swatch7-font-size;
+                    font-weight: @font-swatch7-font-weight;
+                    line-height: @font-swatch7-line-height;
+                    background-color: @font-swatch7-background-color;
+                    .border-radius(3px);
+                    border: none;
+                    margin: 5px 0;
+                    padding: 11px 15px 11px 40px;
+                    text-decoration: none;
+                    }
+                a:hover {
+                    background-color: @font-swatch7-background-color-hover;
+                    .transition( all, 0.5s, ease );
+                }
+            }
+        }
+
+    // Paypal, Dropbox
+
+        .widget.paypalbuynow .widget.button.paypal, .widget.dropbox button {
+            background-position: 15px;
+            padding: 8px 15px 8px 48px;
+        }
+
+    // Tweet
+
+        .widget.tweet a {
+            padding: 11px 15px 11px 40px;
+            background-color: #4099FF;
+        }
+
+    // Ecom
+
+        a.btn.ecom-product-go-to-checkout-btn, a.btn.ecombasket-summary-link {
+            padding: 10px 14px;
+        }
+
+        .widget.ecombasket .ecombasket-pull p, .widget.ecombasket .ecombasket-pull .basket-count {
+            font-family: @font-swatch7-font-family;
+        }
+
+    // Blog
+
+        .blog-post-sharing {
+            margin: 2.5em 0;
+            button {
+                margin-right: 5px;
+                &.btn.facebook {
+                    background-color: #3b5998;
+                     &:hover {
+                        background-color: lighten(#3b5998,10%);
+                    }
+                }
+                &.btn.twitter {
+                    background-color: #4099FF;
+                    &:hover {
+                        background-color: lighten(#4099FF,10%);
+                    }
+                }
+                &.btn.googleplus {
+                    background-color: #d34836;
+                    &:hover {
+                        background-color: lighten(#d34836,10%);
+                    }
+                }
+            }
+        }
+
+    // Form Buttons
+
+        .signupform fieldset button, 
+        .blogsearch form button.blog-search-submit-button, 
+        .widget.profile form button.btn {
+            height: 45px;
+            position: relative;
+            top: 1px;
+            margin-left: -15px;
+            @media @mobile {
+                margin-left: 0;
+            }
+        }
+
+
+
+
+// -----------------------------
+// Forms
+// -----------------------------
+
+label, .contactform label, .signupform fieldset label {
+    display: block;
+    font-family: @font-swatch2-font-family;
+    color: @font-swatch2-color;
+    font-size: @font-swatch5-font-size;
+    font-weight: @font-swatch5-font-weight;
+    line-height: @font-swatch5-line-height;
+}
+
+input, input[type='text'], input[type=email] {
+    -webkit-appearance:none;
+}
+
+input, input[type='text'], input[type=email], textarea, select, .signupform fieldset input, .blogsearch form input, .signupform fieldset input[type=email], .blogsearch form input[type='text'], .widget.profile form fieldset input {
+    border: 1px solid darken(@color-swatch1,10%);
+    background-color: transparent;
+    height: 45px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    @media @tablet {
+        margin-bottom: 10px;
+    }
+    @media @mobile {
+        width: 100%;
+    }
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 6px #81bde7;
+        border: 1px solid lighten(@color-swatch3,50%);
+    }
+}
+
+select {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    width: auto;
+    height: 45px;
+    background-color: darken(@color-swatch1,2%);
+    border: 1px solid darken(@color-swatch1,15%);
+    color: darken(@color-swatch5,15%);
+    @media @mobile {
+        width: 100%;
+    }
+}
+
+textarea {
+    min-height: 100px;
+}
+
+    // Contact Form
+
+        .widget.contactform {
+            fieldset {
+                input {
+                    text-indent: 40px;
+                    margin-bottom: 10px;
+                    border: 1px solid darken(@color-swatch1,10%);
+                    background-image: image('/images/envelope.png');
+                    background-size: auto;
+                    background-repeat: no-repeat;
+                    background-position: 10px center;
+                    @media @mobile {
+                        background-image: none !important;
+                        text-indent: 5px;
+                    }
+                }
+                .form-group button.btn {
+                    @media @mobile {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .widget.contactform fieldset textarea {
+            margin-bottom: 10px;
+            background-image: image('/images/pencil.png');
+            background-size: auto;
+            background-repeat: no-repeat;
+            background-position: 13px 5px;
+            text-indent: 40px;
+            border: 1px solid darken(@color-swatch1,10%);
+            @media @mobile {
+                background-image: none !important;
+                text-indent: 5px;
+            }
+        }
+
+            // Contact Form SVG Icons
+
+                .svg {
+                    .widget.contactform fieldset input { 
+                        background-image: image('/images/envelope.svg');
+                        background-size: 24px;
+                    }
+                    .widget.contactform fieldset textarea {
+                        background-image: image('/images/pencil.svg');
+                        background-size: contain;
+                        background-size: 20px;
+                    }
+                        @media @mobile {
+                            background-image: image('/images/icon-phone-white.svg');
+                            background-size: 20px;
+                        }
+                    
+                }
+
+
+
+
+// -----------------------------
+// Twitter
+// -----------------------------
+
+.widget.twitter {
+    ul.twitter {
+        li {
+            position: relative;
+        }
+        li span a {
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        .twitter-profile-pic {
+            background-image: image('/images/twitter-bird.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            width: 48px;
+            height: 48px;
+            margin-right: 10px;
+            margin-top: 4px;
+            a img {
+                width: 48px;
+            }
+        }
+        .twitter-content {
+            background-color: darken(@color-swatch1,5%);
+            padding: 30px;
+            margin-left:  68px;
+            .bk-full-name {
+                color: @font-swatch3-color;
+                font-family: @font-swatch3-font-family;
+                font-size: @font-swatch3-font-size;
+                line-height: @font-swatch3-line-height;
+            }
+            p {
+                padding-bottom: 0;
+            }
+            time {
+                font-size: @font-swatch5-font-size;
+            }
+            &:before {
+                content: "";
+                position: absolute;
+                top: 5px;
+                left: 58px;
+                border-right: 15px solid darken(@color-swatch1,5%);
+                border-top-color: inherit;
+                border-top: 15px solid transparent;
+                border-bottom: 15px solid transparent;
+            }
+        }
+    }
+}
+
+
+
+
+// -----------------------------
+// Image widget
+// -----------------------------
+
+.widget.image {
+    margin-bottom: 2em;
+    span img {
+        padding: 0 1px;
+        margin-bottom: 10px;
+    }
+    span.image-title, span.image-description {
+        clear: both;
+    }
+    a:hover {
+        text-decoration: none;
+        span.image-title, span.image-description {
+            text-decoration: none;
+            color: @color-swatch3;
+        }
+    }
+}
+
+.widget.image span.image-title {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 25px 0;
+    margin: 0;
+    font-family: @font-swatch3-font-family;
+    font-size: @font-swatch3-font-size;
+    font-weight: @font-swatch3-font-weight;
+    line-height: @font-swatch3-line-height;
+    color: @font-swatch3-color;
+}
+
+.widget.image span.image-description {
+    display: inline-block;
+    width: 100%;
+    padding: 0 25px 10px;
+    margin: 0;
+    font-family: @font-swatch5-font-family;
+    font-size: @font-swatch5-font-size;
+    font-weight: @font-swatch5-font-weight;
+    line-height: @font-swatch5-line-height;
+    color: @font-swatch5-color;
+}
+
+
+
+
+// -----------------------------
+// Gallery widget
+// -----------------------------
+
+.widget.gallery {
+    width: 101%;
+    margin: 20px 0 20px -0.5%;
+    ul li {
+        @media @tablet {
+            width: 50%;
+            padding-bottom: 50%;
+        }
+        @media @mobile {
+            width: 100%;
+            padding-bottom: 100%;
+        }
+        span.inner {
+            .title,
+            .description {
+                // Font
+                color: @color-swatch1;
+                text-align: center;
+            }
+            .title {
+                font-size: 19px;
+                font-weight: 600;
+                line-height: 29px;
+                font-family: @font-swatch2-font-family;
+                letter-spacing: @font-swatch2-letter-spacing;
+                @media @mobile {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 26px;
+                }
+            }
+            .description {
+                font-size: 16px;
+                line-height: 26px;
+                font-family: @font-swatch5-font-family;
+                letter-spacing: @font-swatch5-letter-spacing;
+                @media @mobile {
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 24x;
+                }
+            }
+        }
+    }
+    // Image Data
+    .image-data {
+        display: block;
+        opacity: 0;
+        background-color: darken(@color-swatch5,10%);
+        -webkit-transition: all 0.4s ease-out;
+        -moz-transition: all 0.4s ease-out;
+        -o-transition: all 0.4s ease-out;
+        transition: all 0.4s ease-out;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+
+
+
+// -----------------------------
+// Social icons
+// -----------------------------
+
+.widget.socialicons a, .widget.profile .bk-profile-socialicons span a {
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+}
+
+
+
+
+// -----------------------------
+// Slideshow
+// -----------------------------
+
+.widget.responsiveslideshow {
+    .slideshow-image-list,
+    .slideshow-widget {
+        min-height: 450px;
+        @media @tablet {
+            min-height: 350px;
+        }
+        @media @mobile {
+            min-height: 280px;
+            height: 280px;
+        }
+    }
+    .content-wrapper {
+        background: darken(@color-swatch5,10%);
+        display: table;
+    }
+    .title {
+        display: block;
+        font-size: @font-swatch3-font-size;
+        font-family: @font-swatch3-font-family;
+        line-height: @font-swatch3-line-height;
+        font-weight: @font-swatch3-font-weight;
+        padding: 5px 20px 5px 20px;
+    }
+    .description {
+        padding: 0px 20px 5px 20px;
+    }
+    .slideshow-widget {
+        /* Arrows */
+        .btn-prev,
+        .btn-next {
+            font-size: 0;
+            z-index: 11;
+            text-indent: -99999px;
+            width: 40px;
+            height: 40px;
+            background: @color-swatch1;
+        }
+        .btn-prev {
+            left: 0;
+            &:after {
+                content: "\2039";
+            }
+        }
+        .btn-next {
+            right: 0;
+            &:after {
+                content: "\203A";
+            }
+        }
+        .btn-prev:after, .btn-next:after {
+            color: darken(@color-swatch5,20%);
+            top: 8px;
+            font-size: 28px;
+        }
+        /* Play Button */
+        .btn-play {
+            background: fade(darken(@color-swatch5,20%),50%);
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+            margin: 0 auto;
+            height: 60px;
+            width: 80px;
+            @media @mobile {
+                left: 38%;
+            }
+            &:after {
+                color: #fff;
+                letter-spacing: -4px;
+                top: 2px;
+            }
+        }
+    }
+    /* Slideshow Controls */
+    .slideshow-widget-controls {
+        .dot {
+            width: 11px;
+            height: 11px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            background-color: fade(darken(@color-swatch5,20%),50%);
+            &.selected {
+                background-color: @color-swatch1;
+                border: 2px solid darken(@color-swatch5,20%);
+            }
+        }
+    }
+}
+
+
+
+
+// -----------------------------
+// Divider widget
+// -----------------------------
+
+hr {
+    &.line {
+        height: 1px;
+    }
+}
+
+
+

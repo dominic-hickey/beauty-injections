@@ -1,0 +1,155 @@
+{% extends "layout.twig" %}
+{% block content %}
+
+<!--Animated CSS -->
+
+<link rel="stylesheet" href="http://daneden.github.io/animate.css/animate.min.css">
+<script src="http://mynameismatthieu.com/WOW/dist/wow.min.js">
+</script>
+<script>
+  new WOW().init();
+</script>
+
+
+
+<div class="bk-home">
+	<header class="cd-header">
+		<div class="intro-background">
+
+			<!-- Image Slider -->
+			<div class="image-slider">
+				<ul id="lightSlider">
+			        <li data-thumb="{{asset('/js/image-slider/images/logo--beminiral.png')}}" class="slide-bg">
+			            <img src="{{asset('/js/image-slider/images/logo--beminiral.png')}}" alt="" class="slide-logo">
+			        </li>
+			        <li data-thumb="{{asset('/js/image-slider/images/logo--casmara.png')}}" class="slide-bg">
+			            <img src="{{asset('/js/image-slider/images/logo--casmara.png')}}" alt="" class="slide-logo">
+			        </li>
+			        <li data-thumb="{{asset('/js/image-slider/images/logo--fresh-minerals.png')}}" class="slide-bg">
+			            <img src="{{asset('/js/image-slider/images/logo--fresh-minerals.png')}}" alt="" class="slide-logo">
+			        </li>
+			        <li data-thumb="{{asset('/js/image-slider/images/logo--dermaroller.png')}}" class="slide-bg">
+			            <img src="{{asset('/js/image-slider/images/logo--dermaroller.png')}}" alt="" class="slide-logo">
+			        </li>
+			        <li data-thumb="{{asset('/js/image-slider/images/logo--icurl.png')}}" class="slide-bg">
+			            <img src="{{asset('/js/image-slider/images/logo--icurl.png')}}" alt="" class="slide-logo">
+			        </li>
+			        <li data-thumb="{{asset('/js/image-slider/images/logo--divaderme.png')}}" class="slide-bg">
+			            <img src="{{asset('/js/image-slider/images/logo--divaderme.png')}}" alt="" class="slide-logo">
+			        </li>
+			        <li data-thumb="{{asset('/js/image-slider/images/logo--jan-marini.png')}}" class="slide-bg">
+			            <img src="{{asset('/js/image-slider/images/logo--jan-marini.png')}}" alt="" class="slide-logo">
+			        </li>
+			        <li data-thumb="{{asset('/js/image-slider/images/logo--priori.png')}}" class="slide-bg">
+			            <img src="{{asset('/js/image-slider/images/logo--priori.png')}}" alt="" class="slide-logo">
+			        </li>
+			        <li data-thumb="{{asset('/js/image-slider/images/logo--skin-scanner.png')}}" class="slide-bg">
+			            <img src="{{asset('/js/image-slider/images/logo--skin-scanner.png')}}" alt="" class="slide-logo">
+			        </li>
+			    </ul>
+			</div>
+
+		</div>
+	</header><!--end cd-header -->
+
+	
+	<nav id="nav-bar">
+		<div class="nav-container">
+			<div class="identity">
+				{{widget('companyname', 'nav-bar-companyname', {"business": "profile"})|raw}}
+			</div>
+			<div class="navigation">
+				{{widget('extendednavigation', 'header-navigation', {"align":"right"})|raw}}
+			</div>
+		</div>
+	</nav>
+	<a name="zone-content"></a>
+	<div class="canvas">
+	    <div class="wrapper clearfix">
+		<div class="wow animated fadeInUp">{{widget('content', 'welcome', {})|raw}}</div>
+	        <div class="responsivecolumns columns-two-50-50">
+		    <div class="column columns-two-left">
+			<div class="wow animated fadeInLeft">{{widget('content', 'leftbarcontent1', {})|raw}}</div>
+			<div class="wow animated fadeInLeft">{{widget('image', 'leftbarimage1', {})|raw}}</div>
+			<div class="wow animated fadeInLeft">{{widget('content', 'leftbarcontent2', {})|raw}}</div>
+			<div class="wow animated fadeInLeft">{{widget('button', 'leftbarbutton1', {})|raw}}</div>
+		    </div>
+		    <div class="column columns-two-right">
+			<div class="wow animated fadeInRight">{{widget('content', 'rightbarcontent1', {})|raw}}</div>
+			<div class="wow animated fadeInRight">{{widget('image', 'rightbarimage1', {})|raw}}</div>
+			<div class="wow animated fadeInRight">{{widget('content', 'rightbarcontent2', {})|raw}}</div>
+			<div class="wow animated fadeInRight">{{widget('button', 'rightbarbutton1', {})|raw}}</div>
+		    </div>
+		</div>
+		<BR>
+		{{widget('line', 'line', {'thickness': 'inherit', 'padding': 'inherit', 'length':'inherit', 'align': 'center'})|raw}}
+		<BR>
+		<div class="responsivecolumns columns-two-50-50">
+		    <div class="column columns-two-left">
+			<div class="wow animated fadeInLeft">{{widget('content', 'leftbarcontent3', {})|raw}}</div>
+			<div class="wow animated fadeInLeft">{{widget('image', 'leftbarimage2', {})|raw}}</div>
+			<div class="wow animated fadeInLeft">{{widget('content', 'leftbarcontent4', {})|raw}}</div>
+			<div class="wow animated fadeInLeft">{{widget('button', 'leftbarbutton2', {})|raw}}</div>
+		    </div>
+		    <div class="column columns-two-right">
+			<div class="wow animated fadeInRight">{{widget('content', 'rightbarcontent3', {})|raw}}</div>
+			<div class="wow animated fadeInRight">{{widget('image', 'rightbarimage2', {})|raw}}</div>
+			<div class="wow animated fadeInRight">{{widget('content', 'rightbarcontent4', {})|raw}}</div>
+			<div class="wow animated fadeInRight">{{widget('button', 'rightbarbutton2', {})|raw}}</div>
+		    </div>
+		</div>
+	    </div>
+
+			<div class="main wrapper">
+				{{zone('main')|raw}}
+			</div><!--end main-->
+	</div><!--end canvas-->
+
+	<div class="footer">
+		<div class="footer-left">
+			{{widget('profile', 'copyright', { 'profileType':'copyright'})|raw}}
+			{{widget('content', 'footercontent1', {})|raw}}
+		</div>
+		<div class="footer-right">
+			{{widget('profile', 'socialicons', { 'profileType':'socialicons', 'socialicons':'profile'})|raw}}
+			{{widget('content', 'footercontent2', {})|raw}}
+		</div>
+	</div>
+
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+
+	<!-- Image Slider Scripts -->
+	<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+	<script src="{{asset('/js/jquery.1.11.0.js')}}"></script>
+	<script src="{{asset('/js/image-slider/js/lightSlider.js')}}"></script>
+	<script type="text/javascript">
+		$('#lightSlider').lightSlider({
+		    gallery: true,
+		    item: 1,
+		    loop: true,
+		    slideMargin: 0,
+		    thumbItem: 4,
+		    thumbMargin: 10,
+		    pager: true,
+		    auto: true,
+		    mode: 'fade',
+		    speed: 1000,
+		    pause: 4000,
+		    responsive : [
+            {
+                breakpoint:769,
+                settings: {
+	            	thumbItem: 3
+	            }
+            }
+        ]
+		});
+	</script>
+
+{% endblock %}
+
+
