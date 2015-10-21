@@ -19,32 +19,50 @@
 			<!-- Image Slider -->
 			<div class="image-slider">
 				<ul id="lightSlider">
-			        <li data-thumb="{{asset('/js/image-slider/images/logo--beminiral.png')}}" class="slide-bg">
-			            <img src="{{asset('/js/image-slider/images/logo--beminiral.png')}}" alt="" class="slide-logo">
+			        <li data-thumb="{{asset('/js/image-slider/images/logo--beminiral.png')}}" class="slide-bg  slide-bg--beminiral">
+			        	<div class="slide-content">
+			            	<img src="{{asset('/js/image-slider/images/logo--beminiral.png')}}" alt="" class="slide-logo">
+			           	</div>
 			        </li>
-			        <li data-thumb="{{asset('/js/image-slider/images/logo--casmara.png')}}" class="slide-bg">
-			            <img src="{{asset('/js/image-slider/images/logo--casmara.png')}}" alt="" class="slide-logo">
+			        <li data-thumb="{{asset('/js/image-slider/images/logo--casmara.png')}}" class="slide-bg  slide-bg--casmara">
+			        	<div class="slide-content">
+			            	<img src="{{asset('/js/image-slider/images/logo--casmara.png')}}" alt="" class="slide-logo">
+			           	</div>
 			        </li>
-			        <li data-thumb="{{asset('/js/image-slider/images/logo--fresh-minerals.png')}}" class="slide-bg">
-			            <img src="{{asset('/js/image-slider/images/logo--fresh-minerals.png')}}" alt="" class="slide-logo">
+			        <li data-thumb="{{asset('/js/image-slider/images/logo--fresh-minerals.png')}}" class="slide-bg  slide-bg--fresh-minerals">
+			        	<div class="slide-content">
+			            	<img src="{{asset('/js/image-slider/images/logo--fresh-minerals.png')}}" alt="" class="slide-logo">
+			           	</div>
 			        </li>
-			        <li data-thumb="{{asset('/js/image-slider/images/logo--dermaroller.png')}}" class="slide-bg">
-			            <img src="{{asset('/js/image-slider/images/logo--dermaroller.png')}}" alt="" class="slide-logo">
+			        <li data-thumb="{{asset('/js/image-slider/images/logo--dermaroller.png')}}" class="slide-bg  slide-bg--dermaroller">
+			        	<div class="slide-content">
+			            	<img src="{{asset('/js/image-slider/images/logo--dermaroller.png')}}" alt="" class="slide-logo">
+			           	</div>
 			        </li>
-			        <li data-thumb="{{asset('/js/image-slider/images/logo--icurl.png')}}" class="slide-bg">
-			            <img src="{{asset('/js/image-slider/images/logo--icurl.png')}}" alt="" class="slide-logo">
+			        <li data-thumb="{{asset('/js/image-slider/images/logo--icurl.png')}}" class="slide-bg  slide-bg--icurl">
+			        	<div class="slide-content">
+			            	<img src="{{asset('/js/image-slider/images/logo--icurl.png')}}" alt="" class="slide-logo">
+			           	</div>
 			        </li>
-			        <li data-thumb="{{asset('/js/image-slider/images/logo--divaderme.png')}}" class="slide-bg">
-			            <img src="{{asset('/js/image-slider/images/logo--divaderme.png')}}" alt="" class="slide-logo">
+			        <li data-thumb="{{asset('/js/image-slider/images/logo--divaderme.png')}}" class="slide-bg  slide-bg--divaderme">
+			        	<div class="slide-content">
+			            	<img src="{{asset('/js/image-slider/images/logo--divaderme.png')}}" alt="" class="slide-logo">
+			           	</div>
 			        </li>
-			        <li data-thumb="{{asset('/js/image-slider/images/logo--jan-marini.png')}}" class="slide-bg">
-			            <img src="{{asset('/js/image-slider/images/logo--jan-marini.png')}}" alt="" class="slide-logo">
+			        <li data-thumb="{{asset('/js/image-slider/images/logo--jan-marini.png')}}" class="slide-bg  slide-bg--jan-marini">
+			        	<div class="slide-content">
+			            	<img src="{{asset('/js/image-slider/images/logo--jan-marini.png')}}" alt="" class="slide-logo">
+			           	</div>
 			        </li>
-			        <li data-thumb="{{asset('/js/image-slider/images/logo--priori.png')}}" class="slide-bg">
-			            <img src="{{asset('/js/image-slider/images/logo--priori.png')}}" alt="" class="slide-logo">
+			        <li data-thumb="{{asset('/js/image-slider/images/logo--priori.png')}}" class="slide-bg  slide-bg--priori">
+			        	<div class="slide-content">
+			            	<img src="{{asset('/js/image-slider/images/logo--priori.png')}}" alt="" class="slide-logo">
+			           	</div>
 			        </li>
-			        <li data-thumb="{{asset('/js/image-slider/images/logo--skin-scanner.png')}}" class="slide-bg">
-			            <img src="{{asset('/js/image-slider/images/logo--skin-scanner.png')}}" alt="" class="slide-logo">
+			        <li data-thumb="{{asset('/js/image-slider/images/logo--skin-scanner.png')}}" class="slide-bg  slide-bg--skin-scanner">
+			        	<div class="slide-content">
+			            	<img src="{{asset('/js/image-slider/images/logo--skin-scanner.png')}}" alt="" class="slide-logo">
+			           	</div>
 			        </li>
 			    </ul>
 			</div>
@@ -52,7 +70,6 @@
 		</div>
 	</header><!--end cd-header -->
 
-	
 	<nav id="nav-bar">
 		<div class="nav-container">
 			<div class="identity">
@@ -123,8 +140,6 @@
 {% block scripts %}
 
 	<!-- Image Slider Scripts -->
-	<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
-	<script src="{{asset('/js/jquery.1.11.0.js')}}"></script>
 	<script src="{{asset('/js/image-slider/js/lightSlider.js')}}"></script>
 	<script type="text/javascript">
 		$('#lightSlider').lightSlider({
@@ -140,13 +155,19 @@
 		    speed: 1000,
 		    pause: 4000,
 		    responsive : [
-            {
-                breakpoint:769,
-                settings: {
-	            	thumbItem: 3
+	            {
+	                breakpoint: 768,
+	                settings: {
+		            	thumbItem: 3
+		            }
+	            },
+	            {
+	                breakpoint: 480,
+	                settings: {
+		            	thumbItem: 2
+		            }
 	            }
-            }
-        ]
+        	]
 		});
 	</script>
 

@@ -134,6 +134,7 @@ body {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+
     width: 100%;
     margin: 0;
     padding: 0;
@@ -146,7 +147,7 @@ body {
     background-color: fade(#000000,20%);
     padding: 30px;
 
-    @media @mobile {
+    @media @tablet {
         width: 90%;
         padding: 20px;
     }
@@ -158,6 +159,7 @@ body {
 // #Image Slider
 // -----------------------------
 
+// SLide BG
 .slide-bg {
     display: -webkit-box;
     display: -moz-box;
@@ -169,7 +171,6 @@ body {
     -ms-flex-align: center;
     align-items: center;
     height: 400px;
-    background-image: image('/js/image-slider/images/slide-bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -182,9 +183,67 @@ body {
     }
 }
 
+
+// Slide BG Variations
+// -------------------
+
+.slide-bg--beminiral {
+    background-image: image('/js/image-slider/images/slide-bg--beminiral.jpg');
+}
+.slide-bg--casmara {
+    background-image: image('/js/image-slider/images/slide-bg--casmara.jpg');
+}
+.slide-bg--fresh-minerals {
+    background-image: image('/js/image-slider/images/slide-bg--fresh-minerals.jpg');
+}
+.slide-bg--dermaroller {
+    background-image: image('/js/image-slider/images/slide-bg--dermaroller.jpg');
+}
+.slide-bg--icurl {
+    background-image: image('/js/image-slider/images/slide-bg--icurl.jpg');
+}
+.slide-bg--divaderme {
+    background-image: image('/js/image-slider/images/slide-bg--divaderme.jpg');
+}
+.slide-bg--jan-marini {
+    background-image: image('/js/image-slider/images/slide-bg--jan-marini.jpg');
+}
+.slide-bg--priori {
+    background-image: image('/js/image-slider/images/slide-bg--priori.jpg');
+}
+.slide-bg--skin-scanner {
+    background-image: image('/js/image-slider/images/slide-bg--skin-scanner.jpg');
+}
+
+
+// Slide Content
+// -------------
+
+.slide-content {
+    width: 100%;
+    padding: 30px;
+
+    @media @tablet {
+        padding: 20px;
+    }
+    @media @mobile {
+        text-align: center;
+    }
+}
+
+// Slide Logo
 .slide-logo {
-    max-width: 350px;
-    padding-left: 40px;
+    width: 350px;
+
+    @media (max-width: 1024px) {
+        width: 270px;
+    }
+    @media @tablet {
+        width: 230px;
+    }
+    @media @tablet {
+        display: none;
+    }
 }
 
 
